@@ -11,6 +11,5 @@ int main()
     std::cout<<"\ns="<<s;
     std::cout<<"\na= "<<std::setw(15)<<a;
     std::cout<<"\na= "<<std::left<<a;
-    
     return 0;
 }
