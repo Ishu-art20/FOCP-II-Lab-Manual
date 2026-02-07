@@ -1,4 +1,4 @@
-// palindrome number
+// palindrome ID check
 #include<iostream>
 using namespace std;
 int main(){
@@ -12,8 +12,8 @@ int main(){
     { 
         
         if(ID[i]!=ID[j])
-        {   flag=1;               //std::cout<<"Not a palindrome";
-            break;                 // return 0; concept
+        {   flag=1;               
+            break;                
         }
     }
     if(flag==0)
