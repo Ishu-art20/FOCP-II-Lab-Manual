@@ -1,4 +1,4 @@
-//
+// max logic
 #include<iostream>
 using namespace std;
 int main(){
@@ -11,6 +11,6 @@ int main(){
         if(max<k[i])
         max = k[i];
     }     
-    cout<<"Max Entry was of :"<<max;
+    cout<<"Max Entry was of : "<<max;
     return 0;
 }  
