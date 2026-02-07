@@ -11,7 +11,7 @@ int main(){
     total = price*items;
     if (items>1000)
     {
-        cout<<"->10% Discount is applicable\n";
+        cout<<"->10% Discount is applicable";
         discount=(0.1*total);
         cout<<"\nYour total bill is : "<<(total-discount);
     }
