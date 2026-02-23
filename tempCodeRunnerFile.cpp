@@ -1,25 +1,35 @@
-// prime functions
+// 
 #include<iostream>
+#include<string>
 using namespace std;
-bool isPrime(int n);
-int main()
-{
-    int n ;
-    cout<<"Enter an integer : ";
-    cin>>n;
-    isPrime(n);
-    return 0;
-}
-bool isPrime(int n)
-{
-    for(int i=2;i<=n/2;i++)
+class Rectangle
+{    public:
+    float length;
+    float width;
+    void inputDimensions()
     {
-        if(n%i==0){
-        cout<<"Not Prime";
-        return false;   }
-        else{
-        cout<<"Prime";
-        return true;  }
+        cout<<"Enter length, Width : ";
+        cin>>length>>width;
     }
-    
+    float calculateArea()
+    {
+        return length*width;
+    }
+    float calculatePerimeter()
+    {
+        return 2*(length+width);
+    }
+    void displayResult()
+    {   cout<<"   Rectangle";
+        cout<<"\nLength and Width : "<<length<<"  "<<width;
+        cout<<"\nArea : "<< length*width<<"\nPerimeter : "<<2*(length+width);
+    }
+};
+int main() {
+    Rectangle r1;
+    r1.inputDimensions();
+    r1.calculateArea();
+    r1.calculatePerimeter();
+    r1.displayResult();
+    return 0;
 }
