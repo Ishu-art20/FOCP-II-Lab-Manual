@@ -20,17 +20,18 @@ class Student
     int calculateTotal()
     {   
         Total = marks1+marks2+marks3;
-        return Total;  // return marks1+marks2+marks3;
+        return Total;  // return (marks1+marks2+marks3);
     }
     void displayDetails()
     {
         cout<<"\nName : "<<name<<"\nRollno : "<<rollno<<"\nTotal Marks = "<<Total;
+        // cout<<"Total Marks : "<<calculateTotal();
     }
 };
 int main(){
-    Student s1;
+    Student s1;   // s1 is the object or instance of the class
     s1.inputDetails();
-    s1.calculateTotal();
+    s1.calculateTotal(); // we can also avoid calling this
     s1.displayDetails();
     return 0;
 }

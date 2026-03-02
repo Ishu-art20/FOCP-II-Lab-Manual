@@ -20,9 +20,9 @@ Rectangle::Rectangle(int n)
 {  length=width=n; }
 Rectangle::Rectangle(int m, int n)
 {  length=m ;width=n; }
-Rectangle::CalculateArea()
+int Rectangle::CalculateArea()
 { return (length*width); }
-Rectangle::CalculatePerimeter()
+int Rectangle::CalculatePerimeter()
 { return 2*(length+width); }
 void Rectangle::display()
 {   cout<<"\nLength = "<<length;  
