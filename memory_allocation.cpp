@@ -1,4 +1,4 @@
-//
+//  static/dynamic memory allocation 
 #include<iostream>
 using namespace std;
 class A
@@ -8,8 +8,7 @@ class A
     A(){ cout<<"\n Default";
           a1=0;a2=0;  }
     A(int a1, int a2)
-    {
-        this-> a1 = a1 ; // (*this).a1=a1;
+    {   this-> a1 = a1 ; // (*this).a1=a1;
         this-> a2 = a2;
     }
     void display()

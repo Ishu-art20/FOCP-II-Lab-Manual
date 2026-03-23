@@ -1,4 +1,4 @@
-//
+// this operator
 #include<iostream>
 using namespace std;
 class A
@@ -17,12 +17,8 @@ class A
 };
 int main()
 {
-    A obj1,obj2(34,56);  //Static memory allocation
-    A *obj4= new A();    //dymanic memory allocation
-    A *obj5= new A(456, 876);
+    A obj1,obj2(34,56);
     obj1.display();
     obj2.display();
-    obj4->display();
-    obj5->display();
     return 0;
 }

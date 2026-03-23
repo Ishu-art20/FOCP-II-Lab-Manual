@@ -7,11 +7,6 @@ class SmartLight
     int brightness;
     bool isOn;
     public:
-    //void turnOn();
-    //void turnOff();
-    //void increaseBrightness();
-    //void decreaseBrightness();
-    //void displayStatus();
      SmartLight() {
         brand="    ";
         brightness = 79;
