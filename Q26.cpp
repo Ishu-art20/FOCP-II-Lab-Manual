@@ -14,6 +14,6 @@ int main()
     }
     percentage=(total)/5.0;
     cout<<"the total marks is="<<total<<endl;
-    cout<<"perecntage is ="<<percentage<<endl;
+    cout<<"perecntage is = "<<percentage<<endl;
     return 0;
 }
