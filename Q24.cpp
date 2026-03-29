@@ -1,4 +1,4 @@
-//
+//Alphabets in pyramid form
 #include<iostream>
 using namespace std;
 int main()
