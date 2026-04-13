@@ -10,7 +10,7 @@ public:
 static string univ_name;
 static string section;
 static int room_no;
-University(string rollno="25CSU000";string name ="Unknown";int marks=0 )
+University(string rollno="25CSU000",string name ="Unknown",int marks=0 )
 {
     this->rollno = rollno;
     this->name = name; this->marks = marks;  
@@ -25,7 +25,7 @@ static void display_univ(){
 };
 string University::univ_name="NCU";
 string University::section="Section B";
-string University::room_no=32;
+int  University::room_no=32;
 int main()
 {
     University s1,s2("25CSU111","ABC",45);
