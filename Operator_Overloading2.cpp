@@ -1,4 +1,4 @@
-//operator overloading part 2
+// pre/post operator overloading 
 #include<iostream>
 using namespace std;
 
@@ -22,13 +22,24 @@ class Rectangle {
 		cout<<"Width = "<<width<<"  Height = "<<height<<endl;
 	}
 };
+//Rectangle operator++(Rectangle obj);  if created outside class
+//Rectangle operator++(Rectangle obj,int i);  if created outside class
 int main() {
 	Rectangle rect(5,10);
 	cout<<"Before increment: ";
     rect.display();
 
-	++rect;
-    cout<<"After increment: ";
+	Rectangle r2;
+	r2=++rect;
+	cout<<"Pre increment: ";
+	rect.display();
+    r2.display();
+
+    cout<<"Post increment: ";
 	rect.display(); 
+    r2=rect++;
+	r2.display();
+	rect.display();
+	
 	return 0;
 }
