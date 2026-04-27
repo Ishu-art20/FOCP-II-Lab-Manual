@@ -12,6 +12,8 @@ int main(){
      {fout<<line<<endl;}
     
     fin.close();
+    remove("C:/Users/Priya/OneDrive/PRIYA/ISHU/Testing_c++code.txt");
     fout.close();
+
     cout<<"Copied";
 }

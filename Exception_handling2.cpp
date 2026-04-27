@@ -1,4 +1,4 @@
-//
+// try catch throw
 #include<iostream>
 #include<stdexcept>
 using namespace std;
